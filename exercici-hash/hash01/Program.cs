@@ -1,4 +1,4 @@
-using System;
+    using System;
 using System.Security.Cryptography;
 using System.Text;
 using System.IO;
@@ -33,6 +33,10 @@ namespace hash01
 
                     Console.WriteLine("Hash del archivo '{0}':", ruta);
                     Console.WriteLine(textOut);
+
+                    string hashArchivoRuta = Path.ChangeExtension(ruta, "SHA");
+                    File.WriteAllText(hashArchivoRuta, textOut);
+                    Console.WriteLine($"Hash guardado en {hashArchivoRuta}");
                 }
             }
             catch (Exception ex)
