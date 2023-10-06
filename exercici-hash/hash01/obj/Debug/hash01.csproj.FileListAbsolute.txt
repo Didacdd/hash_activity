@@ -5,3 +5,10 @@ C:\Users\didac\Downloads\exercici-hash\hash01\obj\Debug\hash01.csproj.AssemblyRe
 C:\Users\didac\Downloads\exercici-hash\hash01\obj\Debug\hash01.csproj.CoreCompileInputs.cache
 C:\Users\didac\Downloads\exercici-hash\hash01\obj\Debug\hash01.exe
 C:\Users\didac\Downloads\exercici-hash\hash01\obj\Debug\hash01.pdb
+C:\Users\didac\Documents\DAM2\Programacio de serveis i processos\Hash Activity\hash_activity\exercici-hash\hash01\bin\Debug\hash01.exe.config
+C:\Users\didac\Documents\DAM2\Programacio de serveis i processos\Hash Activity\hash_activity\exercici-hash\hash01\bin\Debug\hash01.exe
+C:\Users\didac\Documents\DAM2\Programacio de serveis i processos\Hash Activity\hash_activity\exercici-hash\hash01\bin\Debug\hash01.pdb
+C:\Users\didac\Documents\DAM2\Programacio de serveis i processos\Hash Activity\hash_activity\exercici-hash\hash01\obj\Debug\hash01.csproj.AssemblyReference.cache
+C:\Users\didac\Documents\DAM2\Programacio de serveis i processos\Hash Activity\hash_activity\exercici-hash\hash01\obj\Debug\hash01.csproj.CoreCompileInputs.cache
+C:\Users\didac\Documents\DAM2\Programacio de serveis i processos\Hash Activity\hash_activity\exercici-hash\hash01\obj\Debug\hash01.exe
+C:\Users\didac\Documents\DAM2\Programacio de serveis i processos\Hash Activity\hash_activity\exercici-hash\hash01\obj\Debug\hash01.pdb

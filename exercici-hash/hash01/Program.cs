@@ -1,6 +1,7 @@
 using System;
 using System.Security.Cryptography;
 using System.Text;
+using System.IO;
 
 namespace hash01
 {
@@ -10,34 +11,37 @@ namespace hash01
         static void Main(string[] args)
         {
 
-            String textIn = null;
-            Console.Write("Entra text: ");
-            while (string.IsNullOrEmpty(textIn))
+            try
             {
-                Console.Clear();
-                Console.Write("Entra text: "); 
-                textIn = Console.ReadLine();
-            }
-            // Convertim l'string a un array de bytes
-            byte[] bytesIn = Encoding.UTF8.GetBytes(textIn);
-            // Instanciar classe per fer hash
+                Console.Write("Entra la ruta del fitxer: ");
+                String ruta = Console.ReadLine();
 
-            // fent servir using ja es delimita el seu àmbit i no cal fer dispose
-            using (SHA512Managed SHA512 = new SHA512Managed())
+                if (!File.Exists(ruta))
+                {
+                    Console.WriteLine("El archivo no existe.");
+                    return;
+                }
+
+                string contenido = File.ReadAllText(ruta);
+
+                byte[] bytesIn = Encoding.UTF8.GetBytes(ruta);
+
+                using (SHA512Managed SHA512 = new SHA512Managed())
+                {
+                    byte[] hashResult = SHA512.ComputeHash(bytesIn);
+                    string textOut = BitConverter.ToString(hashResult).Replace("-", string.Empty);
+
+                    Console.WriteLine("Hash del archivo '{0}':", ruta);
+                    Console.WriteLine(textOut);
+                }
+            }
+            catch (Exception ex)
             {
-                // Calcular hash
-                byte[] hashResult = SHA512.ComputeHash(bytesIn);
-
-                // Si volem mostrar el hash per pantalla o guardar-lo en un arxiu de text
-                // cal convertir-lo a un string
-
-                String textOut = BitConverter.ToString(hashResult).Replace("-", string.Empty);
-                Console.WriteLine("Hash del text{0}", textIn);
-                Console.WriteLine(textOut);
-                Console.ReadKey();
-
-
+                Console.WriteLine("Error: " + ex.Message);
             }
+            Console.ReadKey();
+
+
 
         }
     }
