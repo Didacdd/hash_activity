@@ -1,0 +1,7 @@
+C:\Users\didac\Downloads\exercici-hash\hash01\bin\Debug\hash01.exe.config
+C:\Users\didac\Downloads\exercici-hash\hash01\bin\Debug\hash01.exe
+C:\Users\didac\Downloads\exercici-hash\hash01\bin\Debug\hash01.pdb
+C:\Users\didac\Downloads\exercici-hash\hash01\obj\Debug\hash01.csproj.AssemblyReference.cache
+C:\Users\didac\Downloads\exercici-hash\hash01\obj\Debug\hash01.csproj.CoreCompileInputs.cache
+C:\Users\didac\Downloads\exercici-hash\hash01\obj\Debug\hash01.exe
+C:\Users\didac\Downloads\exercici-hash\hash01\obj\Debug\hash01.pdb
